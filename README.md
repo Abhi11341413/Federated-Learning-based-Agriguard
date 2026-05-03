@@ -18,27 +18,6 @@ Screenshots_and_Explanation.md: Visual breakdown of the Streamlit architecture, 
 
 Demo_Video_Link.txt: Link to the full demonstration application video.
 
-💻 Source Code Structure
-
-The codebase is structured to separate the local edge logic from the federated cloud aggregator and the offline data resources:
-
-AgriGuard_Submission/
-├── data/                    <-- Distributed Non-IID Image Data (Simulation)
-│   ├── client_abhishek/
-│   ├── client_abid/
-│   └── client_diwakar/
-├── app.py                   <-- Streamlit Application (Edge UI & RAG Pipeline)
-├── client.py                <-- Federated Edge Node Script
-├── server.py                <-- Global Aggregator (Flower Server)
-├── model.py                 <-- MobileNetV2 Edge AI Architecture
-├── vision.py                <-- OpenCV HSV Validation Pipeline
-├── setup_nosql.py           <-- Database Initialization Script
-├── test_ai.py               <-- Inference Testing Script
-├── agriguard_model.pth      <-- Aggregated FedAvg Global Model Weights
-├── remedies.xml             <-- Offline XML Document Database
-├── agri_data.json           <-- NoSQL Diagnostic Data mapping
-└── requirements.txt         <-- Project Dependencies
-
 
 🧠 A Note on agriguard_model.pth
 
@@ -60,7 +39,7 @@ pip install -r requirements.txt
 Configure the Agentic AI (Gemini):
 To test the AI Chatbot prescription feature, open app.py and insert a valid Gemini API key at the top of the file:
 
-API_KEY = "YOUR_API_KEY_HERE"
+
 
 
 How to Run the Project
